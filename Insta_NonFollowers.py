@@ -85,7 +85,7 @@ def Get_Following():
         #delay after every scroll for loading
         sleep(1)
     
-    #Follwer names are extracted
+    #Following names are extracted
     Following_a = Following_box.find_elements_by_tag_name('a')
     Following = [Names.get_attribute('title') for Names in Following_a if Names.get_attribute('title') != '' ]
 
